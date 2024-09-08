@@ -1,7 +1,7 @@
+import { useContext } from "react"
+import { UserContext } from "../react-context/context"
+
 export function Footer() {
-  return (
-    <footer>
-      <h1>Footer</h1>
-    </footer>
-  );
+  const { user } = useContext(UserContext)
+  return <div>ini {user.email}</div>
 }
